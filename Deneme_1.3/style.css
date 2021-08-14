@@ -583,6 +583,7 @@
 .settings_tools{
     bottom: 46px;
     right: 0px;
+    display: none;
     position: absolute;
     list-style: none;
     background: #fff;
