@@ -575,7 +575,7 @@
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     border: none;
-    background-color: none;
+    background: none;
     margin: 0;
     box-sizing: border-box;
     align-items: flex-start;
