@@ -590,7 +590,6 @@
 .li{
     display: list-item;
     list-style: none;
-    border: 1px solid red;
     font-size: 14px;
     margin: 0;
     padding: 0;
