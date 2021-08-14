@@ -1,5 +1,8 @@
 #body{
     margin: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
 }
 .page{
     display: flex;
@@ -554,15 +557,10 @@
     white-space: nowrap;
     text-decoration: none;
     cursor: pointer;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .settings{
     position: relative;
     display: block;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
 }
 .settings_style{
     cursor: pointer;
@@ -581,8 +579,6 @@
     align-items: flex-start;
 }
 .settings_tools{
-    bottom: 46px;
-    right: 0px;
     display: none;
     position: absolute;
     list-style: none;
@@ -590,17 +586,14 @@
     border: 1px solid#70757a;
     margin: 0;
     padding: 0;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
 }
 .li{
     display: list-item;
     list-style: none;
     border: 1px solid red;
     font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
+    margin: 0;
+    padding: 0;
 }
 .search_settings{
     color: #70757a;
@@ -610,6 +603,4 @@
     text-decoration: none;
     cursor: pointer;
     list-style: none;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
 }
