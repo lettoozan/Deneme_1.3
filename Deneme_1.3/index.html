@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
         <title>Google</title>
-        <link rel="shortcut icon" href="C:\Users\Acer\Desktop\Deneme_1.3\title_logo.png">
+        <link rel="shortcut icon" href="C:\Deneme_1.3_Repo\Deneme_1.3\Deneme_1.3\title_logo.png">
     </head>
     <body id="body">
         <div class="page">
@@ -122,8 +122,8 @@
                             <a class="security" href="https://policies.google.com/privacy?hl=tr&fg=1">Gizlilik</a>
                             <a class="conditions" href="https://policies.google.com/terms?hl=tr&fg=1">Şartlar</a>
                             <div class="settings">
-                                <button class="settings_style" aria-haspopup="true" jsaction="mousedown:lgs1Pb;FwYIgd;keydown:QXPedb">Ayarlar</button>
-                                <ul class="settings_tools" role="menu" style="bottom: 46px; right: 0px; display: none;" aria-expanded="true">
+                                <button class="settings_style" id="test" onclick="settings_click()" aria-haspopup="true" aria-controls="settings_dropdown">Ayarlar</button>
+                                <ul class="settings_tools" id="settings_dropdown" role="menu" aria-labelledby="test" style="bottom: 46px; right: 0px; display: none;">
                                     <li role="none">
                                         <a class="search_settings" href="https://www.google.com/preferences?hl=tr&fg=1" role="menuitem" tabindex="-1">Arama ayarları</a>
                                     </li>
@@ -140,7 +140,7 @@
                                         <a class="search_settings" href="https://support.google.com/websearch/?p=ws_results_help&hl=tr&fg=1" role="menuitem" tabindex="-1">Arama yardımı</a>
                                     </li>
                                     <li role="none">
-                                        <button class="search_settings" data-bucket="websearch" role="menuitem" tabindex="-1">Geri bildirim gönder</button>
+                                        <button class="search_settings" id="feedback_button" data-bucket="websearch" role="menuitem" tabindex="-1">Geri bildirim gönder</button>
                                     </li>
                                 </ul>
                             </div>
