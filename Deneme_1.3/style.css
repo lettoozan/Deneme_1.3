@@ -465,6 +465,9 @@
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
 }
+.about:hover{
+    text-decoration: underline;
+}
 .ads{
     color: #70757a;
     display: block;
@@ -474,6 +477,9 @@
     cursor: pointer;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
+}
+.ads:hover{
+    text-decoration: underline;
 }
 .business{
     color: #70757a;
@@ -485,6 +491,9 @@
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
 }
+.business:hover{
+    text-decoration: underline;
+}
 .how_search_work{
     color: #70757a;
     display: block;
@@ -494,6 +503,9 @@
     cursor: pointer;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
+}
+.how_search_work:hover{
+    text-decoration: underline;
 }
 .footer_tools_2{
     order: 2;
@@ -514,6 +526,9 @@
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
 }
+.carbon:hover{
+    text-decoration: underline;
+}
 .leaf{
     height: 14px;
     margin-right: 6px;
@@ -530,6 +545,9 @@
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
 }
+.carbon_about:hover{
+    text-decoration: underline;
+}
 .footer_tools_3{
     justify-content: flex-end;
     min-width: 30%;
@@ -539,6 +557,7 @@
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     color: #222;
+    
 }
 .security{
     color: #70757a;
@@ -550,6 +569,9 @@
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
 }
+.security:hover{
+    text-decoration: underline;
+}
 .conditions{
     color: #70757a;
     display: block;
@@ -558,9 +580,12 @@
     text-decoration: none;
     cursor: pointer;
 }
+.conditions:hover{
+    text-decoration: underline;
+}
 .settings{
     position: relative;
-    display: block;
+    display: inline-block;
 }
 .settings_style{
     cursor: pointer;
@@ -578,14 +603,20 @@
     box-sizing: border-box;
     align-items: flex-start;
 }
+.settings_style:hover{
+    text-decoration: underline;
+}
 .settings_tools{
     display: none;
     position: absolute;
-    list-style: none;
-    background: #fff;
-    border: 1px solid#70757a;
-    margin: 0;
-    padding: 0;
+    background-color: #fff;
+    border: 1px solid #70757a;
+    z-index: 1;
+    min-width: 200px;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 .li{
     display: list-item;
@@ -593,13 +624,29 @@
     font-size: 14px;
     margin: 0;
     padding: 0;
+    text-align: -webkit-match-parent;
 }
 .search_settings{
     color: #70757a;
     display: block;
     padding: 15px;
     white-space: nowrap;
+    text-align: left;
     text-decoration: none;
     cursor: pointer;
     list-style: none;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+}
+#feedback_button{
+    border: none;
+    background: none;
+    margin: 0px;
+    min-width: 200px;
+}
+.search_settings:hover{
+    text-decoration: underline;
+}
+.settings_tools.show {
+    display: block !important;
 }
