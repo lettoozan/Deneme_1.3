@@ -1,16 +1,20 @@
-#body{
+html, body{
+    height: 100%;
     margin: 0;
+    padding: 0;
+}
+body, input, button{
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     color: #222;
+}
+div{
+    display: block;
 }
 .page{
     display: flex;
     height: 100%;
     flex-direction: column;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
 }
 .nav{
     display: flex;
@@ -18,16 +22,11 @@
     padding: 6px;
     height: 60px;
     box-sizing: border-box;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
     flex-shrink: 0;
 }
 .nav_bar{
     display: inline-block;
     flex-grow: 1;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
 }
 .nav_bar_style{
     min-width: auto;
@@ -63,8 +62,6 @@
     font-family: Arial, Helvetica, sans-serif;
     line-height: normal;
     padding-right: 15px;
-    white-space: nowrap;
-    color: black;
 }
 .nav_bar_tools_left_gmail{
     display: inline-block;
@@ -205,9 +202,6 @@
     margin: 0 auto;
     padding-top: 6px;
     display: block;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
 }
 .search_bar{
     width: auto;
@@ -220,18 +214,17 @@
     z-index: 3;
     height: 44px;
     margin: 0 auto;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
+}
+.search_bar:hover{
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
 }
 .search_bar_in{
     flex: 1;
     display: flex;
     padding: 5px 8px 0 16px;
     padding-left: 14px;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
 }
 .search_bar_lens{
     display: flex;
@@ -241,9 +234,6 @@
 }
 .lens_style{
     margin: auto;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
 }
 .lens{
     margin-top: 3px;
@@ -254,8 +244,6 @@
     fill: currentColor;
     line-height: 24px;
     position: relative;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .search_bar_textbox{
     display: flex;
@@ -298,34 +286,19 @@
     flex: 1 0 auto;
     display: flex;
     cursor: pointer;
-    align-items: center;
+    align-content: center;
     border: 0;
     background: transparent;
     outline: none;
     padding: 0 8px;
     width: 24px;
-    line-height: 44px;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
+    line-height: 47px;
 }
-.keyborad_style{
-    background: url(https://www.gstatic.com/inputtools/images/tia.png) no-repeat center;
+.keyboard_style{
+    background: no-repeat center;
     height: 24px;
     width: 24px;
     vertical-align: middle;
-    cursor: pointer;
-    line-height: 44px;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
-}
-.keyboard{
-    cursor: pointer;
-    line-height: 44px;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
 }
 .microphone{
     flex: 1 0 auto;
@@ -374,6 +347,12 @@
     align-items: flex-start;
     box-sizing: border-box;
 }
+.google_search_button:hover{
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
 .i_fell_lucky_button{
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
@@ -391,20 +370,21 @@
     align-items: flex-start;
     box-sizing: border-box;
 }
+.i_fell_lucky_button:hover{
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
 .language_select{
     flex-grow: 1;
     flex-shrink: 0;
     box-sizing: border-box;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
 }
 .language_select_style{
     font-size: small;
     margin-bottom: 24px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
 }
 .language_select_article{
     color: #3c4043;
@@ -418,16 +398,13 @@
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
 }
+#a:hover{
+    text-decoration: underline;
+}
 .footer{
     background: #f2f2f2;
     flex-shrink: 0;
     box-sizing: border-box;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
 .footer_country{
     padding: 15px 30px;
@@ -441,9 +418,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 20px;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
 }
 .footer_tools_1{
     justify-content: flex-start;
@@ -451,9 +425,6 @@
     order: 1;
     display: flex;
     flex-wrap: wrap;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
 }
 .about{
     color: #70757a;
@@ -462,8 +433,6 @@
     white-space: nowrap;
     text-decoration: none;
     cursor: pointer;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .about:hover{
     text-decoration: underline;
@@ -475,8 +444,6 @@
     white-space: nowrap;
     text-decoration: none;
     cursor: pointer;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .ads:hover{
     text-decoration: underline;
@@ -488,8 +455,6 @@
     white-space: nowrap;
     text-decoration: none;
     cursor: pointer;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .business:hover{
     text-decoration: underline;
@@ -501,8 +466,6 @@
     white-space: nowrap;
     text-decoration: none;
     cursor: pointer;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .how_search_work:hover{
     text-decoration: underline;
@@ -512,9 +475,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
 }
 .carbon{
     color: #70757a;
@@ -523,8 +483,6 @@
     white-space: nowrap;
     text-decoration: none;
     cursor: pointer;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .carbon:hover{
     text-decoration: underline;
@@ -534,16 +492,12 @@
     margin-right: 6px;
     white-space: nowrap;
     cursor: pointer;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .carbon_about{
     white-space: nowrap;
     vertical-align: top;
     color: #70757a;
     cursor: pointer;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .carbon_about:hover{
     text-decoration: underline;
@@ -553,11 +507,7 @@
     min-width: 30%;
     order: 3;
     display: flex;
-    flex-wrap: wrap;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
-    
+    flex-wrap: wrap; 
 }
 .security{
     color: #70757a;
@@ -566,8 +516,6 @@
     white-space: nowrap;
     text-decoration: none;
     cursor: pointer;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .security:hover{
     text-decoration: underline;
@@ -595,8 +543,6 @@
     display: block;
     padding: 15px;
     white-space: nowrap;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
     border: none;
     background: none;
     margin: 0;
@@ -635,8 +581,6 @@
     text-decoration: none;
     cursor: pointer;
     list-style: none;
-    font-size: 14px;
-    font-family: arial,sans-serif;
 }
 #feedback_button{
     border: none;
