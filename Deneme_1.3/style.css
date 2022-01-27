@@ -29,7 +29,7 @@ div{
     flex-grow: 1;
 }
 .nav_bar_style{
-    min-width: auto;
+    min-width: 320px;
     font: 13px/27px Roboto, RobotoDraft, Arial, sans-serif;
     z-index: 986;
     height: 48px;
@@ -75,11 +75,14 @@ div{
     display: inline-block;
     line-height: 24px;
     vertical-align: middle;
-    text-decoration: none;
     color: rgba(0,0,0,0.87);
+    text-decoration: none;
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
     white-space: nowrap;
+}
+.gmail_images_style:hover{
+    text-decoration: underline;
 }
 .nav_bar_tools_left_images{
     display: inline-block;
@@ -127,6 +130,17 @@ div{
     height: 40px;
     width: 40px;
 }
+.apps:hover{
+    background-color: rgba(95, 99, 104, 0.24);
+    background-position: -64px -29px;
+    padding: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+}
 .apps_design{
     color: #5f6368;
     opacity: 1;
@@ -151,6 +165,18 @@ div{
     cursor: pointer;
     text-decoration: underline;
     line-height: normal;
+}
+.picture_account:hover{
+    flex: 0 1 auto;
+    padding: 4px;
+    background-color: rgba(95,99,104,0.24);
+    border-radius: 50%;
+    outline: none;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
 }
 .picture_account_style{
     background-size: 32px 32px;
@@ -311,9 +337,9 @@ div{
     padding: 0 8px;
     width: 24px;
     line-height: 44px;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
+}
+.microphone_title::after{
+    display: block;
 }
 .buttons{
     height: 70px;
@@ -321,9 +347,6 @@ div{
     top: 53px;
     z-index: 0;
     display: block;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
 }
 .center{
     display: block;
